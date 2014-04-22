@@ -2,5 +2,8 @@
 
 FactoryGirl.define do
   factory :contact do
+    name { Faker::Name.name }
+    phone { Faker::Numbers.phone_number }
+    user_id '10'
   end
 end
